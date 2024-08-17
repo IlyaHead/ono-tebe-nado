@@ -69,6 +69,7 @@
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #fff;
+  line-height: 144%;
 }
 
 .aligned-text {
@@ -97,13 +98,13 @@
 
 .cover__description {
   display: flex;
-  padding-top: 133px;
   justify-content: space-between;
   align-items: center;
   font-weight: normal;
   font-size: 22px;
   line-height: 127%;
   text-transform: uppercase;
+  padding-top: 133px;
 }
 
 .cover__description-text {
@@ -116,7 +117,6 @@
   font-size: 22px;
   text-transform: uppercase;
   text-align: center;
-  color: #fff;
   border: 1px solid #fff;
   text-decoration: none;
   padding: 12px 33px 9px 32px;

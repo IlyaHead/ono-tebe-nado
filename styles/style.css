@@ -66,7 +66,6 @@
   flex-direction: column;
   font-weight: bold;
   font-size: 100px;
-  line-height: 122%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
   color: #fff;
@@ -74,18 +73,17 @@
 
 .aligned-text {
   margin-right: auto;
+  line-height: 122%;
 }
-
-
 
 .aligned-text_center {
   margin: auto;
-  line-height: 133%;
+  line-height: 134%;
 }
 
 .aligned-text_right {
   margin-left: auto;
-  line-height: 106%;
+  line-height: 105%;
   word-spacing: -25px;
 }
 

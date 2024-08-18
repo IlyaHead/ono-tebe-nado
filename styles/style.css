@@ -2,9 +2,7 @@
   display: grid;
   grid-template-columns: 1fr 136px 1fr;
   align-items: center;
-  padding-top: 92px;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 92px 24px;
 }
 
 .header__links-list {
@@ -39,6 +37,82 @@
 }
 
 .header__address a {
-  letter-spacing: -0.04em;
+  letter-spacing: -0.031em;
 }
 
+.cover {
+  position: relative;
+  z-index: -2;
+  padding-top: 165px;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-image: url(../images/cover.jpg);
+  color: #fff;
+}
+
+.overlay {
+  position: absolute;
+  z-index: -1;
+  inset: 0 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.cover__title {
+  position: relative;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 245%;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}
+
+.aligned-text {
+ position: absolute;
+ inset: -64px 0px;
+}
+
+.aligned-text_center {
+  position: absolute;
+  inset: 63px 286px;
+  
+}
+
+.aligned-text_right {
+  position: absolute;
+  inset: 182px 584px;
+}
+
+.letter-spacing-extended {
+  letter-spacing: 60px;
+}
+
+.no-letter-spacing {
+  letter-spacing: 30px;
+}
+
+.cover__description {
+  position: relative;
+  padding-left: 28px;
+  padding-bottom: 102px;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 123%;
+  text-transform: uppercase;
+}
+
+.cover__description-text {
+  display: inline-block;
+  position: absolute;
+  word-spacing: .84em;
+  top:13px;
+}
+
+.bet-button {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-decoration: none;
+  padding: 12px 32px 10px;
+  border: 1px solid #fff;
+}

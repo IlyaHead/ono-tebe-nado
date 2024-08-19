@@ -49,17 +49,18 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 128px;
+  gap: 126px;
   padding-top: 165px;
   padding-right: 50px;
   padding-left: 50px;
+  padding-bottom: 50px;
   color: #fff;
   background-image: url(../images/cover.jpg);
 }
 
 .overlay {
   position: absolute;
-  inset: 0 0;
+  inset: 0;
   z-index: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
@@ -68,10 +69,9 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
   font-weight: bold;
   font-size: 100px;
-  line-height: 114%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
@@ -101,7 +101,6 @@
   align-items: center;
   gap: 78px;
   padding-left: 28px;
-  padding-bottom: 51px;
   font-weight: normal;
   font-size: 22px;
   line-height: 123%;
@@ -110,11 +109,13 @@
 
 .cover__description-text {
   display: inline-block;
+  z-index: 1;
   word-spacing: .84em;
 }
 
 .bet-button {
   display: inline-block;
+  z-index: 1;
   border: 1px solid #fff;
   padding: 12px 32px 10px;
   text-decoration: none;

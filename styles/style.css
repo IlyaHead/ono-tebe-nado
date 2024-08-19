@@ -49,19 +49,16 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-right: 50px;
-  padding-left: 50px;
-  padding-bottom: 50px;
   color: #fff;
   background-image: url(../images/cover.jpg);
 }
-/* 
+
 .overlay {
   position: absolute;
   inset: 0 0;
   z-index: 0;
   background-color: rgba(0, 0, 0, 0.6);
-} */
+}
 
 .cover__title {
   position: relative;
@@ -69,6 +66,8 @@
   flex-direction: column;
   padding-top: 165px;
   padding-bottom: 126px;
+  padding-left: 50px;
+  padding-right: 50px;
   gap: 3px;
   font-weight: bold;
   font-size: 100px;
@@ -100,7 +99,8 @@
   display: flex;
   align-items: center;
   gap: 78px;
-  padding-left: 28px;
+  padding-left: 78px;
+  padding-bottom: 50px;
   font-weight: normal;
   font-size: 22px;
   line-height: 123%;

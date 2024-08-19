@@ -96,7 +96,8 @@
 .cover__description {
   display: flex;
   align-items: center;
-  gap: 77px;
+  justify-content: end;
+  gap: 78px;
   padding-left: 28px;
   font-weight: normal;
   font-size: 22px;

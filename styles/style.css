@@ -51,6 +51,7 @@
   flex-direction: column;
   color: #fff;
   background-image: url(../images/cover.jpg);
+  background-size: center;
 }
 
 .overlay {

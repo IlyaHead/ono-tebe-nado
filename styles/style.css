@@ -97,9 +97,11 @@
 }
 
 .cover__description {
-  position: relative;
-  padding-bottom: 102px;
+  display: flex;
+  align-items: center;
+  gap: 78px;
   padding-left: 28px;
+  padding-bottom: 51px;
   font-weight: normal;
   font-size: 22px;
   line-height: 123%;
@@ -107,16 +109,11 @@
 }
 
 .cover__description-text {
-  position: absolute;
-  top:13px;
   display: inline-block;
   word-spacing: .84em;
 }
 
 .bet-button {
-  position: absolute;
-  top: 0;
-  right: 0;
   display: inline-block;
   border: 1px solid #fff;
   padding: 12px 32px 10px;

@@ -47,11 +47,11 @@
 
 .cover {
   position: relative;
-  display: flex;
-  flex-direction: column;
+  padding: 165px 50px 50px 50px;
   color: #fff;
   background-image: url(../images/cover.jpg);
-  background-size: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .overlay {
@@ -65,10 +65,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  padding-top: 165px;
   padding-bottom: 126px;
-  padding-left: 50px;
-  padding-right: 50px;
   gap: 3px;
   font-weight: bold;
   font-size: 100px;
@@ -100,8 +97,7 @@
   display: flex;
   align-items: center;
   gap: 78px;
-  padding-left: 78px;
-  padding-bottom: 50px;
+  padding-left: 28px;
   font-weight: normal;
   font-size: 22px;
   line-height: 123%;

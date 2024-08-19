@@ -13,16 +13,16 @@
   list-style-type: circle;
 }
 
-.header__links-list-item a {
-  border-bottom: 1px solid #000;
-  text-decoration: none;
-}
-
 .header__links-list-item_no-bullit {
   list-style-type: none;
 }
 
-.header__links-list-item_no-bullit a {
+.header__link {
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+.header__link_active {
   border-bottom: none;
 }
 
@@ -47,7 +47,9 @@
 
 .cover {
   position: relative;
-  z-index: -2;
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
   padding-top: 165px;
   padding-right: 50px;
   padding-left: 50px;
@@ -58,33 +60,32 @@
 .overlay {
   position: absolute;
   inset: 0 0;
-  z-index: -1;
+  z-index: 0;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   font-weight: bold;
   font-size: 100px;
-  line-height: 245%;
+  line-height: 114%;
   letter-spacing: 0.3em;
   text-transform: uppercase;
 }
 
 .aligned-text {
- position: absolute;
- inset: -64px 0px;
+  display: block;
 }
 
 .aligned-text_center {
-  position: absolute;
-  inset: 63px 286px;
-  
+  text-align: center;
 }
 
 .aligned-text_right {
-  position: absolute;
-  inset: 182px 584px;
+  text-align: right;
 }
 
 .letter-spacing-extended {
@@ -92,7 +93,7 @@
 }
 
 .no-letter-spacing {
-  letter-spacing: 30px;
+  letter-spacing: normal;
 }
 
 .cover__description {
@@ -151,15 +152,17 @@
 
 .card {
   position: relative;
-  z-index: -2;
   display: grid;
   align-content: space-between;
   min-height: 563px;
   padding: 51px 40px 48px;
   color: #fff;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
+  z-index: 1;
   font-weight: bold;
   font-size: 22px;
   line-height: 120%;
@@ -168,6 +171,7 @@
 }
 
 .card__text {
+  z-index: 1;
   font-weight: normal;
   font-size: 20px;
   line-height: 120%;
@@ -175,20 +179,14 @@
 
 .card_type_film {
   background-image: url(../images/card-lot-01.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_book {
   background-image: url(../images/card-lot-02.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_picture {
   background-image: url(../images/card-lot-03.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 .lots__look-more-link {
@@ -264,6 +262,10 @@
   font-size: 18px;
   text-align: center;
   list-style-type: none;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
 }
 
 .footer__social-list {
